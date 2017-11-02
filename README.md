@@ -1,6 +1,6 @@
-# SD2E API Docs
+# DesignSafe-CI API User Guide
 
-Docs for SD2E core platform and additional integrated web service APIs.
+This content is best viewed at its Github Pages URL
 
-https://sd2e.github.io/api-user-guide/
+* https://designsafe-ci.github.io/api-user-guide/
 

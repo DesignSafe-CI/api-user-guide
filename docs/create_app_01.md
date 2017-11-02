@@ -14,11 +14,11 @@ inputs and outputs, what flags might be used, etc.).
 
 *Prerequisite: `git` should be installed on your local machine*
 
-On the [SD2E github pages](https://github.com/SD2E/reactors-etl),
+On the [Designsafe github pages](https://github.com/Designsafe/reactors-etl),
 you will find examples of several apps that have already
 been built. Clone the entire repo using git and navigate into the `reactors` folder:
 ```
-% git clone https://github.com/SD2E/reactors-etl
+% git clone https://github.com/Designsafe/reactors-etl
 Cloning into 'reactors-etl'...
 remote: Counting objects: 602, done.
 remote: Compressing objects: 100% (46/46), done.
@@ -62,7 +62,7 @@ hello-container/
 At the top level, you will find a `Dockerfile` and `build.sh` script. These are
 necessary for building the container reproducibly, and having them will facilitate 
 future app updates. The `deploy.sh` script is the final script of the app building
-process which helps the user add their app to the Agave SD2E tenant.
+process which helps the user add their app to the Agave Designsafe tenant.
 
 The major subdirectory is named `hello-container-0.1.0/` - a concatenation of the
 name of the app and the version of the executable. This directory contains both 

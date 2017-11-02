@@ -4,22 +4,22 @@ title: Install and Configure the CLI
 tagline:
 ---
 
-The primary method for interacting with the SD2E platform is the 
+One method for interacting with Designsafe as a platform is this 
 [Agave command line interface (CLI)](https://agaveapi.co/).
 The CLI is a collection of ~150 shell scripts for managing
 authorization, files, systems, applications, jobs, and more. 
 
 There are three methods to install the CLI:
-1. Run an installer script to install in ~/sd2e-cloud-cli/bin/
+1. Run an installer script to install in ~/dscli
 2. Manual install to a location of your choosing
-3. Pull a CLI Docker image
+3. Pull and use our Docker image
 
 <br>
-#### Run an installer script to install in ~/sd2e-cloud-cli/bin/
+#### Run an installer script to install in ~/dscli/
 
 Open a terminal window and run the installer script:
 ```
-% curl -L https://raw.githubusercontent.com/sd2e/sd2e-cli/master/install/install.sh | sh
+% curl -L https://raw.githubusercontent.com/DesignSafe-CI/dscli/master/install/install.sh | sh
 ```
 
 This will install the executables and write an `export PATH` command to your
@@ -30,12 +30,12 @@ This will install the executables and write an `export PATH` command to your
 
 Finally, verify that the CLI has been installed by issuing the following:
 ```
-% sd2e info
+% ds info
 
-DARPA SD2E version 1.0.1
-TACC Cloud API tenant: sd2e
+Designsafe-CI API version 1.0.0
+TACC Cloud API tenant: designsafe
 TACC Cloud API versions:
-        Science APIs: 2.2.5
+        Science APIs: 2.2.11
         Reactors API: dev
         TACC Accounting API: v1
 ```
@@ -46,30 +46,31 @@ TACC Cloud API versions:
 Open a terminal window and navigate to your preferred location for installation:
 
 ```
-% mkdir sd2e-project && cd sd2e-project
+% mkdir ds-project && cd ds-project
 ```
 
 Download and unpack the CLI:
 ```
-% curl -L https://raw.githubusercontent.com/sd2e/sd2e-cli/master/sd2e-cloud-cli.tgz -o sd2e-cloud-cli.tgz
-% tar -xvzf sd2e-cloud-cli.tgz
+% curl -L https://raw.githubusercontent.com/DesignSafe-CI/dscli/master/dscli.tgz -o dscli.tgz
+% tar -xvzf dscli.tgz
 ```
 
 Then add the CLI executables to your `PATH`:
 ```
-% echo "PATH=\$PATH:$PWD/sd2e-cloud-cli/bin" >> ~/.bashrc
+% echo "PATH=\$PATH:$PWD/dscli/bin" >> ~/.bashrc
 % source ~/.bashrc
 ```
 
 Finally, verify that the CLI has been installed by issuing the following:
 ```
-% sd2e info
+% ds info
 
-DARPA SD2E version 1.0.1
-TACC Cloud API tenant: sd2e
+Designsafe-CI API version 1.0.0
+TACC Cloud API tenant: designsafe
 TACC Cloud API versions:
-	Science APIs: 2.2.5
-	Reactors API: dev
+        Science APIs: 2.2.11
+        Reactors API: dev
+        TACC Accounting API: v1
 ```
 
 <br>
@@ -79,19 +80,20 @@ The CLI is also available as a Docker image. For this to work, it is assumed you
 have a reasonably recent version of [Docker](https://www.docker.com/) installed.
 Pull the latest image and verify CLI availability by performing:
 ```
-% docker pull sd2e/cloud-cli:latest
-% docker run -it -v $HOME/.agave:/root/.agave sd2e/cloud-cli bash
+% docker pull designsafeci/cloud-cli:latest
+% docker run -it -v $HOME/.agave:/root/.agave designsafeci/cloud-cli
 ```
 
 Then from within Docker, verify that the CLI is available:
 ```
-/home$ sd2e info
+/home$ ds info
 
-DARPA SD2E version 1.0.1
-TACC Cloud API tenant: sd2e
+Designsafe-CI API version 1.0.0
+TACC Cloud API tenant: designsafe
 TACC Cloud API versions:
-	Science APIs: 2.2.5
-	Reactors API: dev
+        Science APIs: 2.2.11
+        Reactors API: dev
+        TACC Accounting API: v1
 ```
 
 <br>

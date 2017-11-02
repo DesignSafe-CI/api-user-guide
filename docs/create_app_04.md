@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Create Custom Applications
-tagline: Add your app to the SD2E tenant
+tagline: Add your app to the Designsafe tenant
 ---
 
 At this stage, most of the files that form the Agave app bundle are ready to go.
@@ -152,7 +152,7 @@ and `archivePath` json objects. More on job submission [here](http://developer.a
 
 The deploy script does two things. It stages your app assets (including the 
 wrapper script) on the storage system specified in the app description, and it
-creates a new app in the SD2E tenant using the Agave `apps-addupdate` command.
+creates a new app in the Designsafe tenant using the Agave `apps-addupdate` command.
 ```
 % cd ~/fastqc/
 % bash deploy.sh fastqc-0.11.5/
@@ -162,7 +162,7 @@ Successfully added app fastqc-username-0.11.5
 ```
 
 Among other output, a success message should appear near the bottom, indicating
-your app has been successfully deployed to the SD2E tenant.
+your app has been successfully deployed to the Designsafe tenant.
 
 
 <br>

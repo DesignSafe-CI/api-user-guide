@@ -24,7 +24,7 @@ You can register your app to ANY system at TACC, but Maverick may not always be 
 
 You can learn about all choices at the [TACC Systems Overview](https://www.tacc.utexas.edu/systems/overview). Detailed specifications can be found in the *User Guide* of each system.
 
-If you have an application already configured on a non-tacc system, you can register that system to the SD2E agave tenant.
+If you have an application already configured on a non-tacc system, you can register that system to the Designsafe agave tenant.
 
 - [System Registration Guide](https://sd2e.github.io/api-user-guide/docs/create_systems.html)
 

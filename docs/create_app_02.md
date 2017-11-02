@@ -25,8 +25,8 @@ We will continue with the example of FastQC from the
 
 The only dependency for [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 is a reasonably recent Java Runtime Environment.
-Thus, most modern Linux OS-es should suffice. The SD2E Docker hub provides base
-images for this. To begin, pull the `ubuntu16` base image from the SD2E Docker hub:
+Thus, most modern Linux OS-es should suffice. The Designsafe Docker hub provides base
+images for this. To begin, pull the `ubuntu16` base image from the Designsafe Docker hub:
 ```
 % docker pull sd2e/base:ubuntu16
 ```

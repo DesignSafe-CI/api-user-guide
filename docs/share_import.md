@@ -4,7 +4,7 @@ title: "Data Management: Share and Import"
 tagline:
 ---
 
-The Agave CLI makes it possible to share data with other users on the SD2E
+The Agave CLI makes it possible to share data with other users on the Designsafe
 tenant, and import data from the web. Use your best judgement in deciding
 whether to copy shared data or link against shared data with the understanding
 that storage space is limited.
@@ -21,7 +21,7 @@ This page is broken down into the following sections:
 
 <br>
 #### Find another user
-To share a file with another user on the SD2E tenant, you must first know their
+To share a file with another user on the Designsafe tenant, you must first know their
 username. The Agave CLI has a set of tools that can be used to find other users.
 View your own user profile by issuing:
 
@@ -136,13 +136,13 @@ generate a short URL with a user-specified lifetime and limited number of uses.
 Anyone with the URL can paste it into a web browser, or curl against it on the
 command line. To create a postit: 
 ```
-% postits-create -m 5 -l 3600 https://api.sd2e.org/files/v2/media/system/data-tacc-work-username/sd2e-data/my_file.txt
+% postits-create -m 5 -l 3600 https://agave.designsafe-ci.org/files/v2/media/system/data-tacc-work-username/sd2e-data/my_file.txt
 ```
 
 The json response from this command is the URL, e.g.:
 
 ``` 
-https://api.sd2e.org/postits/v2/866d55b36a459e8098173655e916fa15
+https://agave.designsafe-ci.org/postits/v2/866d55b36a459e8098173655e916fa15
 ```
 
 This postit is only good for 5 downloads (`-m 5`) and only available for one hour (3600 seconds, `-l 3600`). The creator of the postit can list and delete their postits with the following commands:

@@ -5,17 +5,17 @@ tagline:
 ---
 
 The Agave CLI is used to configure your user environment to interact with the 
-SD2E platform. If you do not yet have the CLI installed and in your `$PATH`, first
+Designsafe platform. If you do not yet have the CLI installed and in your `$PATH`, first
 go [here](install_cli.md).
 
 <br>
-#### Initiate with the SD2E Agave tenant
+#### Initiate with the Designsafe Agave tenant
 
 On the command line, perform: 
 ```
 % tenants-init -t sd2e
 
-You are now configured to interact with the APIs at https://api.sd2e.org/
+You are now configured to interact with the APIs at https://agave.designsafe-ci.org/
 ```
 
 This new configuration is stored in an Agave configuration file located in your
@@ -27,7 +27,7 @@ home directory: `~/.agave/current`
 API keys are used to authenticate and store your user credentials for a specific 
 client application. To generate API Keys:
 ```
-% clients-create -S -N sd2e_client -D "My client used for interacting with SD2E"
+% clients-create -S -N sd2e_client -D "My client used for interacting with Designsafe"
 API username:   # enter TACC username
 API password:   # enter TACC password
 

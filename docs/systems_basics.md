@@ -8,7 +8,7 @@ An Agave *system* is a server or collection of servers associated with a single
 hostname. They may be public or private, and they may either be **storage** systems
 (used for storing files) or **execution** systems (used for running jobs).
 
-In SD2E, we provide all users with private storage and execution systems attached to
+In Designsafe, we provide all users with private storage and execution systems attached to
 TACC resources. If you would like to create your own systems attached to different
 resources, skip ahead to [Create Private Systems](create_systems.md).
 
@@ -34,7 +34,7 @@ Here is a quick summary of the default storage systems:
 
 * `data-sd2e-projects-*`: These are subproject storage spaces. Your access rights will be variable. These will show up in the portal under **My Projects**.
 
-* `data-sd2e-app-assets`: This system is private to SD2E staff and read-only. It will not show up in the portal.
+* `data-sd2e-app-assets`: This system is private to Designsafe staff and read-only. It will not show up in the portal.
 
 <br>
 Systems where you are able to execute commands and run jobs (called execution systems)
@@ -57,9 +57,9 @@ Here is a quick summary of the default execution systems:
 
 * `hpc-tacc-maverick-username`: Your personal execution system for the TACC [Maverick](https://portal.tacc.utexas.edu/user-guides/maverick) supercomputer. Jobs run against this execution system will be submitted to the Maverick job queue on your behalf.
 
-* `*-tacc-maverick`: Public HPC and CLI execution systems for the TACC [Maverick](https://portal.tacc.utexas.edu/user-guides/maverick) supercomputer. Most SD2E community members have `USER` access and will be able to run public applications set up to run on these systems.
+* `*-tacc-maverick`: Public HPC and CLI execution systems for the TACC [Maverick](https://portal.tacc.utexas.edu/user-guides/maverick) supercomputer. Most Designsafe community members have `USER` access and will be able to run public applications set up to run on these systems.
 
-* `*-tacc-wrangler`: Public HPC and CLI execution system for the TACC [Wrangler](https://portal.tacc.utexas.edu/user-guides/wrangler) supercomputer. Most SD2E community members have `USER` access and will be able to run public applications set up to run on these systems.
+* `*-tacc-wrangler`: Public HPC and CLI execution system for the TACC [Wrangler](https://portal.tacc.utexas.edu/user-guides/wrangler) supercomputer. Most Designsafe community members have `USER` access and will be able to run public applications set up to run on these systems.
 
 
 
@@ -77,19 +77,19 @@ information about your personal storage system as follows:
   "owner": "sd2eadm",
   "_links": {
     "owner": {
-      "href": "https://api.sd2e.org/profiles/v2/sd2eadm"
+      "href": "https://agave.designsafe-ci.org/profiles/v2/sd2eadm"
     },
     "metadata": {
-      "href": "https://api.sd2e.org/meta/v2/data/?q=%7B%22associationIds%22%3A%223474211147285074407-242ac11a-0001-006%22%7D"
+      "href": "https://agave.designsafe-ci.org/meta/v2/data/?q=%7B%22associationIds%22%3A%223474211147285074407-242ac11a-0001-006%22%7D"
     },
     "credentials": {
-      "href": "https://api.sd2e.org/systems/v2/data-tacc-work-username/credentials"
+      "href": "https://agave.designsafe-ci.org/systems/v2/data-tacc-work-username/credentials"
     },
     "roles": {
-      "href": "https://api.sd2e.org/systems/v2/data-tacc-work-username/roles"
+      "href": "https://agave.designsafe-ci.org/systems/v2/data-tacc-work-username/roles"
     },
     "self": {
-      "href": "https://api.sd2e.org/systems/v2/data-tacc-work-username"
+      "href": "https://agave.designsafe-ci.org/systems/v2/data-tacc-work-username"
     }
   },
   "available": true,
@@ -132,22 +132,22 @@ Similar information can be seen when querying execution systems:
   "maxSystemJobs": 50,
   "_links": {
     "owner": {
-      "href": "https://api.sd2e.org/profiles/v2/sd2eadm"
+      "href": "https://agave.designsafe-ci.org/profiles/v2/sd2eadm"
     },
     "metadata": {
-      "href": "https://api.sd2e.org/meta/v2/data/?q=%7B%22associationIds%22%3A%22766742035567677927-242ac11a-0001-006%22%7D"
+      "href": "https://agave.designsafe-ci.org/meta/v2/data/?q=%7B%22associationIds%22%3A%22766742035567677927-242ac11a-0001-006%22%7D"
     },
     "credentials": {
-      "href": "https://api.sd2e.org/systems/v2/hpc-tacc-maverick-username/credentials"
+      "href": "https://agave.designsafe-ci.org/systems/v2/hpc-tacc-maverick-username/credentials"
     },
     "roles": {
-      "href": "https://api.sd2e.org/systems/v2/hpc-tacc-maverick-username/roles"
+      "href": "https://agave.designsafe-ci.org/systems/v2/hpc-tacc-maverick-username/roles"
     },
     "self": {
-      "href": "https://api.sd2e.org/systems/v2/hpc-tacc-maverick-username"
+      "href": "https://agave.designsafe-ci.org/systems/v2/hpc-tacc-maverick-username"
     },
     "history": {
-      "href": "https://api.sd2e.org/systems/v2/hpc-tacc-maverick-username/history"
+      "href": "https://agave.designsafe-ci.org/systems/v2/hpc-tacc-maverick-username/history"
     }
   },
   "executionType": "HPC",
@@ -199,7 +199,7 @@ Similar information can be seen when querying execution systems:
       "maxProcessorsPerNode": 20,
       "mappedName": "vis",
       "maxUserJobs": 10,
-      "customDirectives": "-A SD2E-Community"
+      "customDirectives": "-A Designsafe-Community"
     },
     {
       "maxJobs": 20,
@@ -212,7 +212,7 @@ Similar information can be seen when querying execution systems:
       "maxProcessorsPerNode": 640,
       "mappedName": "vis",
       "maxUserJobs": 2,
-      "customDirectives": "-A SD2E-Community"
+      "customDirectives": "-A Designsafe-Community"
     },
     {
       "maxJobs": 4,
@@ -225,7 +225,7 @@ Similar information can be seen when querying execution systems:
       "maxProcessorsPerNode": 640,
       "mappedName": "gpu",
       "maxUserJobs": 1,
-      "customDirectives": "-A SD2E-Community"
+      "customDirectives": "-A Designsafe-Community"
     },
     {
       "maxJobs": 8,
@@ -238,7 +238,7 @@ Similar information can be seen when querying execution systems:
       "maxProcessorsPerNode": 640,
       "mappedName": "gpu",
       "maxUserJobs": 2,
-      "customDirectives": "-A SD2E-Community"
+      "customDirectives": "-A Designsafe-Community"
     }
   ],
   "globalDefault": false,

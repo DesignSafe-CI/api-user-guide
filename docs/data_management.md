@@ -139,7 +139,7 @@ grants and revocations, reasons for failure, and hiccups that may have occurred 
 the transfer process.
 ```
 % files-history -S data-tacc-work-username sd2e-data/my_copy.txt                  
-File item copied from https://api.sd2e.org/files/v2/media/system/data-tacc-work-username//sd2e-data/my_file.txt
+File item copied from https://agave.designsafe-ci.org/files/v2/media/system/data-tacc-work-username//sd2e-data/my_file.txt
 ```
 
 <br>

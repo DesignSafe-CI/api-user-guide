@@ -11,7 +11,7 @@ easier to interact with systems that do not allow password authentication or tha
 require frequent password changes, and it will increase security by preventing
 the need to store your password in a plain text file.
 
-If you are new to the Agave CLI and the SD2E Agave tenant, it is recommended to
+If you are new to the Agave CLI and the Designsafe Agave tenant, it is recommended to
 skip this section of the documents until you need to
 [create your own private systems](create_systems.md).
 

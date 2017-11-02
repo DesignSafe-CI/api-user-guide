@@ -4,7 +4,7 @@ title: Create Private Systems
 tagline:
 ---
 
-Most standard SD2E API users will not need to create custom execution or storage
+Most standard Designsafe API users will not need to create custom execution or storage
 systems. By default, you have access to some private and public execution and
 storage systems that should connect you to [most of TACC resources](systems_basics.md).
 

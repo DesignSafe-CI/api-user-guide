@@ -129,7 +129,7 @@ as it will be defined later by Agave. We also do not mount our example data into
 the Docker container, as that will be taken care of in production.
 
 ---
-Proceed to [Add your app to the SD2E tenant](create_app_04.md)
+Proceed to [Add your app to the Designsafe tenant](create_app_04.md)
 
 Go back to [Create Custom Applications](create_app.md)
 

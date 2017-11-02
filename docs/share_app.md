@@ -4,7 +4,7 @@ title: Share an Application with Others
 tagline:
 ---
 
-As a normal user of the SD2E tenant, you have permissions to build and deploy
+As a normal user of the Designsafe tenant, you have permissions to build and deploy
 private apps only. Private apps are, by default, only visible to you. To share
 an app with your colleagues, follow the steps below.
 
@@ -82,10 +82,9 @@ your private app using the same `job.json` file and `jobs-submit` commands as yo
 <br>
 #### Publish the app globaly
 
-Normal SD2E users do not have the appropriate permissions to publish an app
-globally. If you have deployed and tested
-an app, and are happy with its behavior, please contact `support-at-sd2e-dot-org`
-and an admin will help to publish your app.
+Normal Designsafe users do not have the appropriate permissions to publish an app
+globally. If you have deployed and tested an app, and are happy with its behavior, 
+please contact Designsafe staff and an admin will assist you.
 
 ---
 Return to the [API Documentation Overview](../index.md)

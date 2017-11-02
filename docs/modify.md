@@ -5,9 +5,9 @@ tagline:
 ---
 
 Agave [systems](create_systems.md) and [apps](create_app.md) are described by
-`json` files and added to the SD2E tenant using the command line interface. To
+`json` files and added to the Designsafe tenant using the command line interface. To
 modify a system or app after it has been added, simply edit the original `json`
-file and use the command line interface to push the changes to the SD2E tenant.
+file and use the command line interface to push the changes to the Designsafe tenant.
 
 Common examples are shown below.
 
@@ -130,7 +130,7 @@ data as follows (only one line is edited, all other parts untouched):
 ...
 ```
 
-Then, update the app in the SD2E tenant by performing the following:
+Then, update the app in the Designsafe tenant by performing the following:
 ```
 % apps-addupdate -F app.json fastq-username-0.11.5
 ```

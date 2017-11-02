@@ -4,7 +4,7 @@ title: Find an Application
 tagline:
 ---
 
-The SD2E catalog has several pre-built public applications (or "apps" for short) 
+The Designsafe catalog has several pre-built public applications (or "apps" for short) 
 that are available to run right now. Each public application is tied to a public
 HPC system.
 
@@ -29,7 +29,7 @@ previous apps.
 #### Search for applications by name
 
 Use the `apps-search` command to see if an app you are interested in is available
-in the SD2E catalog:
+in the Designsafe catalog:
 ```
 % apps-search -h    # show syntax for searching
 % apps-search public=true name.like=*kallisto*
@@ -46,7 +46,7 @@ Many applications you will find in the catalog can be used in different ways.
 For example, depending on how kallisto is called on the command line, it can be
 used to build an index, quantify abundances of transcripts from RNA-Seq data,
 run a pseudoalignment, or convert HDF5-formatted results to plain text. It is up
-to the developer of the SD2E app to decide which function(s) this particular
+to the developer of the Designsafe app to decide which function(s) this particular
 instance of the app will perform, and to appropriately document it in the app
 description.
 
