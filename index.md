@@ -4,6 +4,20 @@ title: API Documentation Overview
 tagline:
 ---
 
+**NOTE** An early release of the next-generation Tapis Command Line Interface
+is now available for testing. This new version of the CLI will eventually supersede
+the DesignSafe CLI described below. Command line reference and how-to guides are
+available here:
+
+[Tapis CLI Reference Docs](https://tapis-cli.readthedocs.io/en/latest/)
+
+[Tapis CLI How-to Guide](https://tapis-cli-how-to-guide.readthedocs.io/en/latest/)
+
+
+<br><br>
+
+
+
 DesignSafe APIs are an tailored instance of TACC's Cloud APIs. The DesignSafe API provides 
 command line interface, tooling, scripts, and configuration needed to use DesignSafe
 programmatically. Documentation for getting started is below.
