@@ -6,7 +6,7 @@ tagline:
 
 **NOTE** An early release of the next-generation Tapis Command Line Interface
 is now available for testing. This new version of the CLI will eventually supersede
-the DesignSafe API CLI described below. Command line reference and how-to guides are
+the DesignSafe CLI described below. Command line reference and how-to guides are
 available here:
 
 [Tapis CLI Reference Docs](https://tapis-cli.readthedocs.io/en/latest/)
